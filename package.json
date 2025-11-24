@@ -7,14 +7,14 @@
     "start": "node app.js",
     "test": "jest"
   },
-  "repository": {
+    "repository": {
     "type": "git",
     "url": "git+https://github.com/gguip1-study/ci-cd-prac.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
+    "bugs": {
     "url": "https://github.com/gguip1-study/ci-cd-prac/issues"
   },
   "homepage": "https://github.com/gguip1-study/ci-cd-prac#readme",
