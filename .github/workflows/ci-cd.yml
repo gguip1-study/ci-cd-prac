@@ -10,7 +10,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04-arm64
     strategy:
       matrix:
         node-version: [19.x, 20.x, 22.x]
@@ -38,7 +38,7 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN}}
       - name: Build and Push Docker Image
         run: |
-          docker build --platform linux/amd64,linux/arm64 -t ${{ secrets.DOCKER_USERNAME }}/express-hello-world:latest .
+          docker build --platform linux/arm64 -t ${{ secrets.DOCKER_USERNAME }}/express-hello-world:latest .
           docker push ${{ secrets.DOCKER_USERNAME }}/express-hello-world:latest
   deploy:
     needs: build-and-push-image
