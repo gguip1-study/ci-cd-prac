@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-descript('GET /', () => {
+describe('GET /', () => {
   it('should respond with Hello World!', async () => {
     const response = await request(app).get('/');
     expect(response.statusCode).toEqual(200);
