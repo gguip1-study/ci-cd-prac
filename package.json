@@ -1,0 +1,28 @@
+{
+  "name": "ci-cd-prac",
+  "version": "1.0.0",
+  "description": "이 레포는 CI/CD(Continuous Integration/Continuous Deployment) 실습을 위해 만들어졌습니다. 다양한 CI/CD 도구와 파이프라인 설정 방법을 학습하고 테스트하는 데 사용됩니다.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gguip1-study/ci-cd-prac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gguip1-study/ci-cd-prac/issues"
+  },
+  "homepage": "https://github.com/gguip1-study/ci-cd-prac#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4"
+  }
+}
