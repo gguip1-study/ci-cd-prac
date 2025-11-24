@@ -38,8 +38,7 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN}}
       - name: Build and Push Docker Image
         run: |
-          docker build --platform linux/arm64 -t ${{ secrets.DOCKER_USERNAME }}/express-hello-world:latest .
-          docker push ${{ secrets.DOCKER_USERNAME }}/express-hello-world:latest
+          docker buildx build --platform linux/arm64 -t ${{ secrets.DOCKER_USERNAME }}/express-hello-world:latest . --push
 
   deploy:
     needs: build-and-push-image
